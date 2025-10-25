@@ -1,1 +1,8 @@
-
+title: "Omar Youssef — Data Scientist"
+email: "omaryoussef20182019@gmail.com"
+description: "Portfolio and case studies by Omar Youssef"
+baseurl: ""      # لو تستضيف في root اتركه فارغاً
+url: "https://omaryoussef20182019.github.io"
+theme: ""        # نستخدم CSS مخصص، مش theme جاهز
+plugins: []
+paginate: 5
