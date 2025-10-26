@@ -1,1 +1,161 @@
+---
+layout: none
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">{{ site.title | split: "—" | first | strip }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="container text-center py-5">
+  <img src="/assets/images/omar.jpg" alt="profile" class="rounded-circle profile-img mb-3">
+  <h1 class="mb-1">Omar Youssef</h1>
+  <p class="lead mb-1">Data Scientist — Alexandria, Egypt</p>
+  <p>
+    <a href="omaryoussef20182019@gmail.com">Email</a> •
+    <a href="https://www.linkedin.com/in/omar-youssef-0aa9581b1" target="_blank">LinkedIn</a> •
+    <a href="https://github.com/omaryoussef20182019" target="_blank">GitHub</a>
+  </p>
+  <a href="#portfolio" class="btn btn-outline-primary mt-2">View My Projects</a>
+  <a href="/cv/CV.pdf" class="btn btn-primary mt-2" download>Download CV</a>
+</header>
+
+<main class="container mb-5">
+  <!-- Projects -->
+  <section id="portfolio" class="mb-5">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row g-4">
+      {% for p in site.data.projects %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="{{ p.image }}" class="card-img-top" alt="{{ p.title }}">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ p.title }}</h5>
+            <p class="card-text flex-grow-1">{{ p.short }}</p>
+            <p>
+              {% for t in p.tags %}
+                <span class="badge bg-secondary">{{ t }}</span>
+              {% endfor %}
+            </p>
+            <div class="mt-3">
+              <a href="{{ p.repo }}" target="_blank" class="btn btn-sm btn-outline-primary">Code</a>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-{{ p.id }}">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for details -->
+      <div class="modal fade" id="modal-{{ p.id }}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ p.title }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="{{ p.image }}" alt="{{ p.title }}" class="img-fluid mb-3">
+              <p>{{ p.long }}</p>
+              <ul>
+                <li><strong>Tags:</strong> {% for t in p.tags %} {{ t }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+                <li><strong>Repository:</strong> <a href="{{ p.repo }}" target="_blank">{{ p.repo }}</a></li>
+                {% if p.demo and p.demo != "" %}
+                <li><strong>Demo:</strong> <a href="{{ p.demo }}" target="_blank">{{ p.demo }}</a></li>
+                {% endif %}
+              </ul>
+              {% if p.more_images %}
+                <div class="row g-2">
+                  {% for img in p.more_images %}
+                    <div class="col-6"><img src="{{ img }}" class="img-fluid" alt=""></div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- About -->
+ <section id="about" class="mb-5">
+  <h2>About Me</h2>
+  <p>
+    I’m <strong>Omar Youssef</strong>, a passionate <strong>Junior Data Scientist</strong> from Alexandria, Egypt, 
+    dedicated to transforming data into meaningful insights and intelligent solutions. 
+    I’ve completed the <strong>WorldQuant University Applied Data Science Lab</strong>, 
+    where I developed hands-on projects in data cleaning, feature engineering, machine learning, 
+    and model deployment using Python, SQL, and modern AI frameworks.
+  </p>
+  <p>
+    My interests include <strong>financial data analysis, risk modeling, time series forecasting, 
+    and business intelligence</strong>. I enjoy building predictive models, visualizing insights, 
+    and solving complex problems with data-driven approaches. 
+    Currently, I’m pursuing a <strong>Master’s in Financial Engineering</strong> at WorldQuant University, 
+    aiming to bridge the gap between data science and quantitative finance.
+  </p>
+</section>
+
+
+  <!-- Blog preview (last 5 posts) -->
+  <section id="blog" class="mb-5">
+    <h2>Blog</h2>
+    <div class="list-group">
+      {% for post in site.posts limit:5 %}
+        <a href="{{ post.url }}" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ post.title }}</h5>
+            <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+          </div>
+          <p class="mb-1">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        </a>
+      {% endfor %}
+    </div>
+    <a href="/blog" class="btn btn-link mt-3">View All Posts</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:omaryoussef20182019@gmail.com">youremail@example.com</a></p>
+  </section>
+</main>
+
+<footer class="bg-white py-3 text-center">
+  <small>© <span id="year"></span> Omar Youssef. All rights reserved.</small>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
