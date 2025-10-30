@@ -1,1 +1,93 @@
+- id: housing-in-buenos-aires
+  title: "Housing in Buenos Aires"
+  short: "Machine learning model to predict apartment prices in Buenos Aires, Argentina."
+  long: "In this project, we moved from descriptive to predictive data science using real estate data. We created linear regression models using scikit-learn, built data pipelines for imputing missing values and encoding categorical features, improved model performance by reducing overfitting, and developed a dynamic dashboard for interacting with the model. The project includes multiple notebooks covering prediction with Size, Location, Neighborhood, and combinations of these features."
+  image: "/assets/images/buenos_aires_housing.jpg"
+  repo: "https://github.com/yourusername/housing-buenos-aires"
+  demo: ""
+  tags: ["Python","Machine Learning","Data Science","Regression","Dashboard"]
+
+
+- id: mexico-real-estate
+  title: "Housing in Mexico City"
+  short: "Predictive model for apartment prices in Mexico City using machine learning."
+  long: "This project focuses on predicting apartment prices in Mexico City. We used real estate data to build linear regression models with scikit-learn, created pipelines for handling missing values and encoding categorical features, improved model performance by reducing overfitting, and developed interactive dashboards for model exploration. The project includes multiple notebooks covering prediction with Size, Location, Neighborhood, and combinations of these features."
+  image: "/assets/images/mexico_city_housing.jpg"
+  repo: "https://github.com/yourusername/mexico-real-estate"
+  demo: ""
+  tags: ["Python","Machine Learning","Data Science","Regression","Dashboard"]
+
+
+- id: air-quality-nairobi
+  title: "Air Quality in Nairobi"
+  short: "Time series model to predict PM 2.5 air quality readings in Nairobi."
+  long: "In this project, we analyzed air quality data from Nairobi, Lagos, and Dar es Salaam using open data from openAfrica. We queried data from MongoDB, prepared time series datasets, built autoregressive models, tuned hyperparameters to improve model performance, and developed predictive models for PM 2.5 readings throughout the day. The project includes multiple notebooks covering data wrangling, linear regression, autoregression, ARMA modeling, and hyperparameter tuning."
+  image: "/assets/images/air_quality_nairobi.jpg"
+  repo: "https://github.com/yourusername/air-quality-nairobi"
+  demo: ""
+  tags: ["Python","Time Series","Data Science","Regression","ARMA"]
+
+
+- id: earthquake-damage-nepal
+  title: "Earthquake Damage in Nepal"
+  short: "Predictive model for building damage classification after the 2015 Nepal earthquake."
+  long: "In this project, we used data from Open Data Nepal to predict building damage from the 2015 Nepal earthquake, focusing on the Gorkha district and including examples from Ramechhap. We queried SQL databases, built logistic regression and decision tree models for classification, and incorporated ethical considerations into model development. The project includes notebooks covering data wrangling, logistic regression, decision trees, and data ethics."
+  image: "/assets/images/nepal_earthquake.jpg"
+  repo: "https://github.com/yourusername/earthquake-damage-nepal"
+  demo: ""
+  tags: ["Python","Machine Learning","Data Science","Classification","Logistic Regression","Decision Tree"]
+
+
+
+
+- id: bankruptcy-poland
+  title: "Bankruptcy in Poland"
+  short: "Predictive model to classify companies at risk of bankruptcy using financial data."
+  long: "In this project, we analyzed financial data from the Emerging Markets Information Service for Poland and Taiwan to predict company bankruptcy. We navigated file systems from the Linux command line, loaded and saved files using Python, addressed imbalanced data with resampling techniques, and evaluated models using classification metrics like precision and recall. The project includes notebooks covering JSON file handling, imbalanced data, ensemble models such as Random Forest, and Gradient Boosting Trees."
+  image: "/assets/images/bankruptcy_poland.jpg"
+  repo: "https://github.com/yourusername/bankruptcy-poland"
+  demo: ""
+  tags: ["Python","Machine Learning","Data Science","Classification","Ensemble Models","Random Forest","Gradient Boosting"]
+
+
+
+- id: customer-segmentation-us
+  title: "Customer Segmentation in the US"
+  short: "Unsupervised learning project to segment US households based on credit access."
+  long: "In this project, we used data from the 2019 Survey of Consumer Finances to identify households struggling to get credit and segmented them into subgroups using unsupervised learning techniques. We built a k-means clustering model, conducted feature selection, reduced dimensionality using PCA, and designed an interactive Dash web application to visualize the results. The project includes notebooks covering data exploration, clustering with two or multiple features, and dashboard deployment."
+  image: "/assets/images/customer_segmentation_us.jpg"
+  repo: "https://github.com/yourusername/customer-segmentation-us"
+  demo: ""
+  tags: ["Python","Machine Learning","Data Science","Clustering","K-Means","PCA","Dashboard"]
+
+
+
+- id: ab-testing-wqu
+  title: "A/B Testing at WorldQuant University"
+  short: "Design and analyze an A/B test to improve admissions quiz completion at WQU."
+  long: "In this project, we helped WorldQuant University improve admissions engagement by designing and analyzing an A/B test to increase quiz completion rates. We explored applicant data, formulated hypotheses, ran experiments, and evaluated results using chi-square tests. We also built a custom Python ETL class and developed an interactive web application following a three-tier architecture. This project demonstrates how randomized controlled experiments can drive data-informed decisions in education, marketing, and research."
+  image: "/assets/images/ab_testing_wqu.jpg"
+  repo: "https://github.com/yourusername/ab-testing-wqu"
+  demo: ""
+  tags: ["Python","A/B Testing","Data Science","Experiment Design","Chi-square Test","Web App","ETL","Dash"]
+
+
+
+
+
+
+- id: market-forecasting-india
+  title: "Market Forecasting in India"
+  short: "Volatility forecasting model for the Bombay Stock Exchange using GARCH and API deployment."
+  long: "In this project, we developed a machine learning model to predict stock market volatility on the Bombay Stock Exchange. We used the AlphaVantage API to collect real-time stock data, calculated asset volatility, and implemented a GARCH model to forecast it. Additionally, we built a custom Python class to manage data ETL into a SQL database and deployed the trained model via a RESTful API to serve predictions. This project demonstrates advanced time series modeling, API integration, and full model deployment workflow."
+  image: "/assets/images/market_forecasting_india.jpg"
+  repo: "https://github.com/yourusername/market-forecasting-india"
+  demo: ""
+  tags: ["Python","Machine Learning","Time Series","Finance","GARCH","API","SQL","ETL","Model Deployment"]
+
+
+
+
+    
+
 
