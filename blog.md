@@ -1,10 +1,14 @@
 ---
-layout: archive
-title: "All Projects and Blog Posts"
+layout: single
+title: "All Projects and Detailed Case Studies"
 permalink: /blog/
 author_profile: true
 ---
 
-## All Projects and Detailed Case Studies
+<h2 style="color: #64ffda;">Detailed Case Studies and Technical Insights</h2>
 
-Welcome to my repository of detailed case studies and technical insights. Explore the methodology and results of my key Data Science projects below.
+<div class="archive">
+{% for post in site.posts %}
+  {% include archive-single.html type="list" %}
+{% endfor %}
+</div>
