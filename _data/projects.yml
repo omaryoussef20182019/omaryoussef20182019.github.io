@@ -1,54 +1,35 @@
-- id: housing-in-buenos-aires
-  title: "Housing in Buenos Aires"
-  short: "Machine learning model to predict apartment prices in Buenos Aires, Argentina."
-  long: "In this project, we moved from descriptive to predictive data science using real estate data. We created linear regression models using scikit-learn, built data pipelines for imputing missing values and encoding categorical features, improved model performance by reducing overfitting, and developed a dynamic dashboard for interacting with the model. The project includes multiple notebooks covering prediction with Size, Location, Neighborhood, and combinations of these features."
-  image: "/assets/images/Housing in Buenos Aires.jpeg"
-  repo: "https://github.com/omaryoussef20182019/Buenos-Aires-Apartments-Sales"
-  demo: ""
-  tags: ["Python","Machine Learning","Data Science","Regression","Dashboard"]
-
-
-- id: mexico-real-estate
-  title: "Housing in Mexico City"
-  short: "Predictive model for apartment prices in Mexico City using machine learning."
-  long: "This project focuses on predicting apartment prices in Mexico City. We used real estate data to build linear regression models with scikit-learn, created pipelines for handling missing values and encoding categorical features, improved model performance by reducing overfitting, and developed interactive dashboards for model exploration. The project includes multiple notebooks covering prediction with Size, Location, Neighborhood, and combinations of these features."
-  image: "/assets/images/mexico-real-estate.jpg"
-  repo: "https://github.com/omaryoussef20182019/HOUSING-IN-MEXICO"
-  demo: ""
-  tags: ["Python","Machine Learning","Data Science","Regression","Dashboard"]
-
-
-
-
-
-
-
-
-
+# Order: 1 (Newest)
 - id: customer-segmentation-us
-  title: "Customer Segmentation in the US"
-  short: "Unsupervised learning project to segment US households based on credit access."
-  long: "In this project, we used data from the 2019 Survey of Consumer Finances to identify households struggling to get credit and segmented them into subgroups using unsupervised learning techniques. We built a k-means clustering model, conducted feature selection, reduced dimensionality using PCA, and designed an interactive Dash web application to visualize the results. The project includes notebooks covering data exploration, clustering with two or multiple features, and dashboard deployment."
-  image: "/assets/images/customer_segmentation_us.jpg"
-  repo: "https://github.com/yourusername/customer-segmentation-us"
-  demo: ""
-  tags: ["Python","Machine Learning","Data Science","Clustering","K-Means","PCA","Dashboard"]
+  title: Customer Segmentation in US
+  short: Data science project using K-Means Clustering and PCA to identify distinct customer segments for targeted marketing strategies.
+  image: /assets/images/segmentation-cover.jpg
+  repo: https://github.com/omaryoussef20182019/Customer-Segmentation-in-US
+  details_page: /blog/2025/11/27/customer-segmentation-us.html
+  tags: [Python, K-Means, PCA, scikit-learn]
 
+# Order: 2
+- id: housing-in-mexico
+  title: HOUSING IN MEXICO
+  short: Exploratory Data Analysis (EDA) and Regression modeling to predict property prices in various regions of Mexico.
+  image: /assets/images/mexico-housing.jpg
+  repo: https://github.com/omaryoussef20182019/HOUSING-IN-MEXICO
+  details_page: /blog/2025/11/26/housing-in-mexico.html
+  tags: [EDA, Regression, Tableau]
 
+# Order: 3
+- id: buenos-aires-apartments-sales
+  title: Buenos Aires Apartments Sales
+  short: Comprehensive data cleaning and visualization project to analyze apartment sales trends in the Buenos Aires real estate market.
+  image: /assets/images/buenos-aires-sales.jpg
+  repo: https://github.com/omaryoussef20182019/Buenos-Aires-Apartments-Sales
+  details_page: /blog/2025/11/25/buenos-aires-apartments-sales.html
+  tags: [Python, Data Cleaning, Visualization]
 
-
-
-- id: ba-flight-performance
-  title: "British Airways Flight Performance Analysis"
-  short: "Analyzing and predicting British Airways flight performance using machine learning."
-  long: "This project focuses on analyzing British Airways flight performance data to understand delays, cancellations, and operational efficiency. We performed data cleaning and exploratory data analysis (EDA) on historical flight datasets, built predictive models using Python and scikit-learn, handled missing values and categorical variables with pipelines, and visualized insights through interactive dashboards. The analysis includes performance metrics by route, aircraft type, and seasonal trends, helping identify factors affecting flight punctuality."
-  image: "/assets/images/British-Airways-Logo-1997-present.jpg"
-  repo: "https://github.com/omaryoussef20182019/british_airways"
-  demo: ""
-  tags: ["Python","Machine Learning","Data Analysis","EDA","Regression","Dashboard"]
-
-
-
-    
-
-
+# Order: 4 (Oldest)
+- id: british-airways
+  title: British Airways Sentiment Analysis
+  short: Natural Language Processing (NLP) project to analyze customer feedback and sentiment for British Airways flights using text mining techniques.
+  image: /assets/images/british-airways.jpg
+  repo: https://github.com/omaryoussef20182019/british_airways
+  details_page: /blog/2025/11/24/british-airways-sentiment-analysis.html
+  tags: [Sentiment Analysis, NLP, Text Mining]
