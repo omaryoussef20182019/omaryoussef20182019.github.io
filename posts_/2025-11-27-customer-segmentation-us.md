@@ -4,7 +4,7 @@ title: "Customer Segmentation in the US: A K-Means and PCA Approach"
 date: 2025-11-27 10:00:00 +0200
 categories: [Data Science, Machine Learning, Python]
 excerpt: "A comprehensive data science project focusing on identifying distinct customer segments using K-Means Clustering and Principal Component Analysis (PCA) to derive actionable business insights."
-image: /assets/images/segmentation-cover.jpg
+image: /assets/images/customer_segmentation_us.jpg
 ---
 
 ## Project Overview
