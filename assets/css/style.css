@@ -1,26 +1,27 @@
 /* 1. تعريف المتغيرات (Variables) */
-/* هذه الألوان الأساسية لثيم Data Scientist Dark Mode */
 :root {
     --bg-dark: #0a192f;           /* خلفية داكنة (Navy Dark) */
     --bg-secondary: #112240;      /* خلفية أفتح قليلاً للبطاقات والقائمة العلوية */
     --text-light: #ccd6f6;        /* لون النص الأساسي (Off-White) */
     --text-highlight: #64ffda;    /* لون التمييز (Electric Green/Teal) */
     --text-secondary: #8892b0;    /* لون ثانوي للنصوص الصغيرة */
-    
-    /* Font */
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 2. إعداد الثيم العام (Body) */
+/* 2. إعداد الثيم العام بقوة (BODY) */
+/* استخدام !important لضمان التغلب على Bootstrap */
 .theme-dark {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
+    background-color: var(--bg-dark) !important;
+    color: var(--text-light) !important;
     min-height: 100vh;
     font-family: var(--font-primary);
 }
+/* لتأكيد تطبيق اللون على جميع النصوص */
+.theme-dark p, .theme-dark h1, .theme-dark h2, .theme-dark h5, .theme-dark small {
+    color: var(--text-light) !important;
+}
 
 /* 3. تنسيق العناوين والروابط (Typography) */
-/* تنسيق عناوين الأقسام (About Me, Projects, etc.) */
 .theme-heading {
     color: var(--text-light);
     border-bottom: 2px solid var(--text-highlight);
@@ -28,21 +29,20 @@
     padding-bottom: 5px;
     margin-bottom: 30px !important;
 }
-/* تنسيق الأجزاء الهامة في النص (Strong tags) */
 .theme-highlight {
-    color: var(--text-highlight);
+    color: var(--text-highlight) !important;
     font-weight: 600;
 }
 /* تنسيق الروابط العامة */
 .theme-links a,
 .theme-section a {
-    color: var(--text-highlight);
+    color: var(--text-highlight) !important;
     text-decoration: none;
     transition: color 0.3s;
 }
 .theme-links a:hover,
 .theme-section a:hover {
-    color: #a0fcd8; /* لون أفتح عند مرور الماوس */
+    color: #a0fcd8 !important;
 }
 
 /* 4. القائمة العلوية والرأس (Navbar & Header) */
@@ -57,7 +57,7 @@
     border: 3px solid var(--text-highlight);
 }
 .theme-title {
-    font-size: 3rem; /* تكبير اسمك */
+    font-size: 3rem; 
     font-weight: 700;
 }
 .theme-subtitle {
@@ -68,21 +68,21 @@
 
 /* بطاقات المشاريع (Projects Cards) */
 .theme-card {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--bg-secondary);
-    color: var(--text-light);
+    background-color: var(--bg-secondary) !important;
+    border: none !important; /* إزالة حدود Bootstrap */
+    color: var(--text-light) !important;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .theme-card:hover {
-    transform: translateY(-5px); /* حركة بسيطة عند مرور الماوس */
+    transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* الـ Badges (الوسوم الخاصة بالتقنيات) */
+/* الـ Badges (الوسوم) */
 .tag-badge {
-    background-color: rgba(100, 255, 218, 0.1) !important; /* خلفية شفافة قليلاً */
+    background-color: rgba(100, 255, 218, 0.1) !important;
     color: var(--text-highlight) !important;
-    border: 1px solid var(--text-highlight);
+    border: 1px solid var(--text-highlight) !important;
     padding: 5px 10px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -90,7 +90,7 @@
     font-size: 0.85em;
 }
 
-/* الأزرار الملونة بلون التمييز (لزر CV وزر Details) */
+/* الأزرار الملونة بلون التمييز (الـ Accent) */
 .btn-accent {
     background-color: var(--text-highlight);
     color: var(--bg-dark) !important; 
@@ -102,37 +102,34 @@
     border-color: #a0fcd8;
 }
 
-/* الأزرار المحددة بلون التمييز (لزر View Projects وزر Code) */
+/* الأزرار المحددة بلون التمييز (Outlined) */
 .btn-accent-outline {
-    background-color: transparent;
+    background-color: transparent !important;
     color: var(--text-highlight) !important;
-    border-color: var(--text-highlight);
+    border-color: var(--text-highlight) !important;
     font-weight: 600;
 }
 .btn-accent-outline:hover {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(100, 255, 218, 0.1) !important;
     color: var(--text-highlight) !important;
 }
 
 /* 6. التذييل (Footer) والنوافذ المنبثقة (Modals) */
 .theme-footer {
-    background-color: var(--bg-secondary);
-    color: var(--text-secondary);
-    border-top: 1px solid var(--bg-secondary);
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+    border-top: none !important;
 }
 
 .theme-modal-content {
-    background-color: var(--bg-secondary);
-    color: var(--text-light);
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-light) !important;
 }
 .theme-modal-content .modal-header {
-    border-bottom: 1px solid var(--text-secondary);
-}
-.theme-modal-content .btn-close {
-    filter: invert(1); /* لجعل علامة X في المودال بيضاء */
+    border-bottom: 1px solid var(--text-secondary) !important;
 }
 .theme-modal-content .modal-footer {
-    border-top: 1px solid var(--bg-secondary);
+    border-top: 1px solid var(--bg-secondary) !important;
 }
 
 /* تنسيق قائمة المدونة */
@@ -146,5 +143,5 @@
     background-color: var(--bg-secondary) !important;
 }
 .theme-list-item small {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
 }
