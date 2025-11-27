@@ -145,3 +145,10 @@
 .theme-list-item small {
     color: var(--text-secondary) !important;
 }
+/* Custom Accent Color Override for Dark Mode */
+:root {
+  /* تغيير اللون التمييزي (الأخضر الفاتح) إلى لون أزرق هادئ ومريح للعين */
+  --accent-color: #64b5f6; 
+  --accent-color-outline: #64b5f6; 
+  --theme-highlight: #64b5f6;
+}
