@@ -17,14 +17,14 @@ This project focuses on analyzing customer demographic data to identify distinct
 
 The following standard steps for unsupervised learning were performed within the Jupyter Notebook:
 
-1.  **Exploratory Data Analysis (EDA):** Initial data exploration to understand variable distributions, check for relationships between features (e.g., Income vs. Business Ownership), and identify data quality issues.
-2.  **Data Preprocessing:** Handling of missing values and encoding of categorical variables.
-3.  **Feature Scaling:** **StandardScaler** was applied to normalize the data, which is essential for distance-based algorithms like K-Means.
-4.  **Dimensionality Reduction (PCA):** Principal Component Analysis (PCA) was utilized to reduce the high-dimensional feature space into two main components (**PC1 and PC2**) for effective visualization and robust interpretation of the resulting clusters.
-5.  **Clustering with K-Means:**
-    * The optimal number of clusters (k) was determined using the Elbow Method and/or Silhouette Score.
-    * The K-Means algorithm was trained using the reduced PCA data.
-6.  **Visualization:** Clusters were visualized on an interactive scatter plot using the first two principal components with the `plotly.express` library.
+1.  **Exploratory Data Analysis (EDA):** Initial data exploration to understand variable distributions, check for relationships between features (e.g., Income vs. Business Ownership), and identify data quality issues.
+2.  **Data Preprocessing:** Handling of missing values and encoding of categorical variables.
+3.  **Feature Scaling:** **StandardScaler** was applied to normalize the data, which is essential for distance-based algorithms like K-Means.
+4.  **Dimensionality Reduction (PCA):** Principal Component Analysis (PCA) was utilized to reduce the high-dimensional feature space into two main components (**PC1 and PC2**) for effective visualization and robust interpretation of the resulting clusters.
+5.  **Clustering with K-Means:**
+    * The optimal number of clusters (k) was determined using the Elbow Method and/or Silhouette Score.
+    * The K-Means algorithm was trained using the reduced PCA data.
+6.  **Visualization:** Clusters were visualized on an interactive scatter plot using the first two principal components with the `plotly.express` library.
 
 ---
 
