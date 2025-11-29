@@ -7,12 +7,17 @@ excerpt: "A comprehensive data analysis project focused on analyzing British Air
 image: /assets/images/british_airways.jpg
 ---
 
+<link rel="stylesheet" href="/assets/css/blog-post.css">
+
+<div class="blog-post-container">
+
+<section class="project-overview">
 ## Project Overview
 
 This project provides a comprehensive data analysis of **British Airways flight performance and customer feedback**. The goal was to categorize flights based on operational metrics (e.g., punctuality, cancellations) and analyze customer sentiment, generating a tiered system for operational review.
+</section>
 
----
-
+<section class="project-methodology">
 ## 🛠️ Methodology
 
 ### 1. Data Handling and KPI Calculation
@@ -28,9 +33,12 @@ This project provides a comprehensive data analysis of **British Airways flight 
 ### 3. Reporting
 
 * Exported tiered metrics and sentiment scores into Excel for management review.
+</section>
 
----
-
+<section class="project-technologies">
 ## 💻 Key Technologies
 
 * **Python, pandas, matplotlib, seaborn, plotly.express, NLP libraries**
+</section>
+
+</div>
