@@ -7,12 +7,17 @@ excerpt: "Identifying distinct customer segments using K-Means and PCA to derive
 image: /assets/images/customer_segmentation_us.jpg
 ---
 
+<link rel="stylesheet" href="/assets/css/blog-post.css">
+
+<div class="blog-post-container">
+
+<section class="project-overview">
 ## Project Overview
 
 Analyzing customer demographic data to **identify meaningful clusters** for targeted marketing using unsupervised ML.
+</section>
 
----
-
+<section class="project-methodology">
 ## 🛠️ Methodology
 
 1. **Exploratory Data Analysis (EDA)** to understand distributions.
@@ -21,9 +26,12 @@ Analyzing customer demographic data to **identify meaningful clusters** for targ
 4. **PCA:** Dimensionality reduction to 2 components.
 5. **K-Means Clustering:** Optimal `k` via Elbow/Silhouette method.
 6. **Visualization:** Interactive scatter plot using `plotly.express`.
+</section>
 
----
-
+<section class="project-technologies">
 ## 💻 Technologies
 
 * **Python, pandas, scikit-learn, matplotlib, seaborn, plotly.express**
+</section>
+
+</div>
