@@ -1,27 +1,33 @@
-/* 1. تعريف المتغيرات (Variables) */
+/* =================================================
+   1. CSS Variables (Colors, Fonts, etc.)
+================================================= */
 :root {
-    --bg-dark: #0a192f;           /* خلفية داكنة (Navy Dark) */
-    --bg-secondary: #112240;      /* خلفية أفتح قليلاً للبطاقات والقائمة العلوية */
-    --text-light: #ccd6f6;        /* لون النص الأساسي (Off-White) */
-    --text-highlight: #64ffda;    /* لون التمييز (Electric Green/Teal) */
-    --text-secondary: #8892b0;    /* لون ثانوي للنصوص الصغيرة */
-    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bg-dark: #0a192f;           /* Dark background (Navy Dark) */
+    --bg-secondary: #112240;      /* Slightly lighter background for cards/navbar */
+    --text-light: #ccd6f6;        /* Primary text color (off-white) */
+    --text-highlight: #64b5f6;    /* Accent color (Electric Blue) */
+    --text-secondary: #8892b0;    /* Secondary text color for smaller text */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Primary font family */
 }
 
-/* 2. إعداد الثيم العام بقوة (BODY) */
-/* استخدام !important لضمان التغلب على Bootstrap */
+/* =================================================
+   2. Global Theme Styles (Body)
+================================================= */
 .theme-dark {
     background-color: var(--bg-dark) !important;
     color: var(--text-light) !important;
     min-height: 100vh;
     font-family: var(--font-primary);
 }
-/* لتأكيد تطبيق اللون على جميع النصوص */
-.theme-dark p, .theme-dark h1, .theme-dark h2, .theme-dark h5, .theme-dark small {
+
+/* Apply text color to all headings and paragraphs */
+.theme-dark p, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h5, .theme-dark small {
     color: var(--text-light) !important;
 }
 
-/* 3. تنسيق العناوين والروابط (Typography) */
+/* =================================================
+   3. Typography & Links
+================================================= */
 .theme-heading {
     color: var(--text-light);
     border-bottom: 2px solid var(--text-highlight);
@@ -33,7 +39,8 @@
     color: var(--text-highlight) !important;
     font-weight: 600;
 }
-/* تنسيق الروابط العامة */
+
+/* Link styles for sections and general links */
 .theme-links a,
 .theme-section a {
     color: var(--text-highlight) !important;
@@ -45,40 +52,44 @@
     color: #a0fcd8 !important;
 }
 
-/* 4. القائمة العلوية والرأس (Navbar & Header) */
+/* =================================================
+   4. Navbar & Header
+================================================= */
 .theme-nav {
     background-color: var(--bg-secondary) !important;
     border-bottom: 1px solid rgba(100, 255, 218, 0.1);
 }
+
 .profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border: 3px solid var(--text-highlight);
 }
+
 .theme-title {
     font-size: 3rem; 
     font-weight: 700;
 }
+
 .theme-subtitle {
     color: var(--text-secondary);
 }
 
-/* 5. المكونات: البطاقات، الأزرار، والـ Badges */
-
-/* بطاقات المشاريع (Projects Cards) */
+/* =================================================
+   5. Cards, Buttons, and Badges
+================================================= */
 .theme-card {
     background-color: var(--bg-secondary) !important;
-    border: none !important; /* إزالة حدود Bootstrap */
+    border: none !important;
     color: var(--text-light) !important;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .theme-card:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* الـ Badges (الوسوم) */
 .tag-badge {
     background-color: rgba(100, 255, 218, 0.1) !important;
     color: var(--text-highlight) !important;
@@ -90,7 +101,6 @@
     font-size: 0.85em;
 }
 
-/* الأزرار الملونة بلون التمييز (الـ Accent) */
 .btn-accent {
     background-color: var(--text-highlight);
     color: var(--bg-dark) !important; 
@@ -102,7 +112,6 @@
     border-color: #a0fcd8;
 }
 
-/* الأزرار المحددة بلون التمييز (Outlined) */
 .btn-accent-outline {
     background-color: transparent !important;
     color: var(--text-highlight) !important;
@@ -114,7 +123,9 @@
     color: var(--text-highlight) !important;
 }
 
-/* 6. التذييل (Footer) والنوافذ المنبثقة (Modals) */
+/* =================================================
+   6. Footer & Modals
+================================================= */
 .theme-footer {
     background-color: var(--bg-secondary) !important;
     color: var(--text-secondary) !important;
@@ -132,7 +143,9 @@
     border-top: 1px solid var(--bg-secondary) !important;
 }
 
-/* تنسيق قائمة المدونة */
+/* =================================================
+   7. Blog List Items
+================================================= */
 .theme-list-item {
     background-color: var(--bg-dark) !important;
     color: var(--text-light) !important;
@@ -145,9 +158,64 @@
 .theme-list-item small {
     color: var(--text-secondary) !important;
 }
-/* Custom Accent Color Override for Dark Mode */
+
+/* =================================================
+   8. Blog Post Container & Content Styling
+================================================= */
+.post-container {
+    background-color: var(--bg-secondary);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.post-container h1,
+.post-container h2,
+.post-container h3 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.post-container p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.post-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.post-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.post-container table th,
+.post-container table td {
+    border: 1px solid var(--text-secondary);
+    padding: 10px;
+}
+.post-container table tr:nth-child(even) {
+    background-color: rgba(100, 255, 218, 0.05);
+}
+
+.post-container pre {
+    background-color: #1e2a47;
+    color: #64ffda;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* =================================================
+   9. Accent Color Override
+================================================= */
 :root {
-  /* تغيير اللون التمييزي (الأخضر الفاتح) إلى لون أزرق هادئ ومريح للعين */
   --accent-color: #64b5f6; 
   --accent-color-outline: #64b5f6; 
   --theme-highlight: #64b5f6;
