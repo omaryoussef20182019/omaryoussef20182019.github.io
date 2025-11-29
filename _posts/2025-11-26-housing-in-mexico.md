@@ -7,7 +7,6 @@ excerpt: "Predicting apartment prices in Mexico City using Ridge Regression and 
 image: /assets/images/housing_mexico.jpg
 ---
 
-
 <div class="blog-post-container">
 
 <section class="project-overview">
