@@ -7,21 +7,29 @@ excerpt: "Predicting apartment prices in Mexico City using Ridge Regression and 
 image: /assets/images/housing_mexico.jpg
 ---
 
+<link rel="stylesheet" href="/assets/css/blog-post.css">
+
+<div class="blog-post-container">
+
+<section class="project-overview">
 ## Project Overview
 
 End-to-end ML solution to **predict apartment prices in Mexico City**, considering size, coordinates, and borough.
+</section>
 
----
-
+<section class="project-methodology">
 ## 🛠️ Methodology
 
 * **Data Wrangling:** Custom `wrangle` function to clean data.
 * **Pipeline:** OneHotEncoder for categorical features, SimpleImputer for missing values, Ridge Regression.
 * **Evaluation:** MAE and interpretable coefficients.
 * **Prediction:** `make_prediction(area, lat, lon, borough)` for new listings.
+</section>
 
----
-
+<section class="project-technologies">
 ## 💻 Technologies
 
 * **Python, pandas, scikit-learn, category_encoders**
+</section>
+
+</div>
