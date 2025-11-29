@@ -7,7 +7,6 @@ excerpt: "A comprehensive data analysis project focused on analyzing British Air
 image: /assets/images/british_airways.jpg
 ---
 
-<link rel="stylesheet" href="/assets/css/blog-post.css">
 
 <div class="blog-post-container">
 
