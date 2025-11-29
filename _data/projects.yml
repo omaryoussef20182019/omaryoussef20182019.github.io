@@ -11,7 +11,7 @@
 - id: housing-in-mexico
   title: HOUSING IN MEXICO
   short: Exploratory Data Analysis (EDA) and Regression modeling to predict property prices in various regions of Mexico.
-  image: /assets/images/mexico-real-estate.jpg
+  image: /assets/images/housing_mexico.jpg
   repo: https://github.com/omaryoussef20182019/HOUSING-IN-MEXICO
   details_page: /blog/2025/11/26/housing-in-mexico.html
   tags: [EDA, Regression, Tableau]
@@ -20,7 +20,7 @@
 - id: buenos-aires-apartments-sales
   title: Buenos Aires Apartments Sales
   short: Comprehensive data cleaning and visualization project to analyze apartment sales trends in the Buenos Aires real estate market.
-  image: /assets/images/Housing in Buenos Aires.jpeg
+  image: /assets/images/buenos_aires.jpg
   repo: https://github.com/omaryoussef20182019/Buenos-Aires-Apartments-Sales
   details_page: /blog/2025/11/25/buenos-aires-apartments-sales.html
   tags: [Python, Data Cleaning, Visualization]
@@ -29,7 +29,7 @@
 - id: british-airways
   title: British Airways Sentiment Analysis
   short: Natural Language Processing (NLP) project to analyze customer feedback and sentiment for British Airways flights using text mining techniques.
-  image: /assets/images/British-Airways-Logo-1997-present.jpg
+  image: /assets/images/british_airways.jpg
   repo: https://github.com/omaryoussef20182019/british_airways
   details_page: /blog/2025/11/24/british-airways-sentiment-analysis.html
   tags: [Sentiment Analysis, NLP, Text Mining]
