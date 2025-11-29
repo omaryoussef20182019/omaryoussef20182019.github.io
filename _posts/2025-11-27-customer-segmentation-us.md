@@ -7,8 +7,6 @@ excerpt: "Identifying distinct customer segments using K-Means and PCA to derive
 image: /assets/images/customer_segmentation_us.jpg
 ---
 
-<link rel="stylesheet" href="/assets/css/blog-post.css">
-
 <div class="blog-post-container">
 
 <section class="project-overview">
