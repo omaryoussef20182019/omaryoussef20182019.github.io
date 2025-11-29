@@ -7,21 +7,29 @@ excerpt: "A data science project focused on predicting apartment sale prices in 
 image: /assets/images/buenos_aires.jpg
 ---
 
+<link rel="stylesheet" href="/assets/css/blog-post.css">
+
+<div class="blog-post-container">
+
+<section class="project-overview">
 ## Project Overview
 
 Machine learning project to **predict Buenos Aires apartment sale prices** using key features like area, coordinates, and neighborhood.
+</section>
 
----
-
+<section class="project-methodology">
 ## 🛠️ Methodology
 
 * **Data Cleaning:** Custom `wrangle` function for standardization.
 * **Feature Selection:** `'surface_covered_in_m2'`, `'lat'`, `'lon'`, `'neighborhood'`.
 * **Model Pipeline:** `OneHotEncoder` + `Ridge Regression`.
 * **Evaluation:** Mean Absolute Error (MAE) and prediction function `make_prediction`.
+</section>
 
----
-
+<section class="project-technologies">
 ## 💻 Technologies
 
 * **Python, pandas, numpy, scikit-learn, seaborn, plotly.express, ipywidgets**
+</section>
+
+</div>
