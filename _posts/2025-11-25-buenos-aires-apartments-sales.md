@@ -7,7 +7,6 @@ excerpt: "A data science project focused on predicting apartment sale prices in 
 image: /assets/images/buenos_aires.jpg
 ---
 
-<link rel="stylesheet" href="/assets/css/blog-post.css">
 
 <div class="blog-post-container">
 
