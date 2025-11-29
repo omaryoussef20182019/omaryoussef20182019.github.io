@@ -48,12 +48,3 @@ The core of the analysis involved rigorous data aggregation and the calculation 
 * **Actionable Report:** The generated Excel output serves as a direct, ready-made report for operational teams, enabling them to prioritize resources and intervention efforts effectively.
 
 ---
-
-### 🚀 خطوتك الأخيرة:
-
-1.  **احفظ** هذا المحتوى في ملف باسم **`2025-11-24-british-airways-flight-analysis.md`** داخل مجلد **`_posts`**.
-2.  قم بعمل **Commit و Push** للملف الجديد.
-
-**بعد هذه الخطوة، تكون قد رفعت جميع المقالات الأربعة وملف `projects.yml` المعدل!**
-
-**أخبرني عندما تحصل على علامة الصح الخضراء (Green Checkmark) في قسم "Actions" لكي نراجع النتيجة النهائية للموقع.**
